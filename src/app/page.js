@@ -21,11 +21,8 @@ export default function Home() {
             <ProductSlider />
             <Link href={'#'}>
               <SlideHoverButton
-                className="w-30"
-                bgButton="bg-transparent"
-                bgHover="bg-destructive"
-                textColor="text-destructive"
-                textHover="text-secondary">
+                className="w-30 bg-transparent text-destructive hover:bg-transparent hover:text-secondary"
+                bgHover="bg-destructive">
                 Xem thêm
                 <MoveRight />
               </SlideHoverButton>

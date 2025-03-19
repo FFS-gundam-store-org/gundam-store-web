@@ -1,30 +1,22 @@
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
-export default function SlideHoverButton({ children, className, bgButton, bgHover, textColor, textHover, ...props }) {
-  console.log(textHover)
+export default function SlideHoverButton({ children, className, bgHover, ...props }) {
 
   return (
     <>
       <Button
         className={cn(
-          'relative overflow-hidden cursor-pointer border border-destructive group',
-          bgButton,
-          `hover:${bgButton}`,
-          textColor,
+          'relative overflow-hidden cursor-pointer border border-destructive transition-colors duration-500 group',
           className
         )}
         {...props}>
         <span className={cn(
           'absolute inset-0 translate-x-[-100%] transition-transform duration-500 ease-in-out group-hover:translate-x-0',
           bgHover
-        )}>
-        </span>
-        <span className={cn(
-          'relative flex items-center gap-2 transition-colors duration-300',
-          `hover:${textHover}`
-        )}>
-          {children}
+        )} />
+        <span className="relative flex items-center gap-2">
+      {children}
         </span>
       </Button>
     </>

@@ -136,7 +136,7 @@
   }
 
   .nav-link {
-    @apply hover:text-destructive duration-300;
+    @apply hover:text-destructive transition-colors duration-300;
   }
 
   .logo {

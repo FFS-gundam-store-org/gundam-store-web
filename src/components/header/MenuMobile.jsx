@@ -34,7 +34,7 @@ export default function MenuMobile() {
         <Link href={'/'} className="logo lg:hidden">
           <em>GUNDAM FFS</em>
         </Link>
-        <div className="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden"
+        <div className="text-xl sm:text-3xl cursor-pointer lg:hidden"
              onClick={toggleMenu}>
           {isOpenMenu ? <X /> : <Menu />}
         </div>
@@ -62,22 +62,22 @@ export default function MenuMobile() {
         </div>
         <hr className="mobile-menu-line" />
         <ul className="flex flex-col gap-4 font-bold text-xl">
-          {menuItems.map((item, index) => (
-            <li key={index} onClick={() => toggleSubMenu(index, !!item.subItems)}>
+          {menuItems.map(item => (
+            <li key={item.id} onClick={() => toggleSubMenu(item.id, !!item.subItems)}>
               <div className="flex gap-1 items-center">
                 <Link href={item.link}>{item.name}</Link>
                 {item.subItems && (
                   <button className="focus:outline-none cursor-pointer">
-                    {isOpenSubMenus === index ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
+                    {isOpenSubMenus === item.id ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
                   </button>
                 )}
               </div>
 
               {item.subItems && (
                 <ul className={`overflow-hidden transition-all duration-500 ease-in-out
-                ${isOpenSubMenus === index ? 'max-h-100 opacity-100 py-2' : 'max-h-0 opacity-0'}`}>
-                  {item.subItems.map((subItem, subIndex) => (
-                    <li key={subIndex} className="font-normal py-1" onClick={toggleMenu}>
+                ${isOpenSubMenus === item.id ? 'max-h-100 opacity-100 py-2' : 'max-h-0 opacity-0'}`}>
+                  {item.subItems.map(subItem => (
+                    <li key={subItem.id} className="font-normal py-1" onClick={toggleMenu}>
                       <Link href={subItem.link}>{subItem.name}</Link>
                     </li>
                   ))}

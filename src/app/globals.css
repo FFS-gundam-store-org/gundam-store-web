@@ -127,8 +127,8 @@
     @apply bg-background text-foreground font-condensed;
   }
 
-  .navbar {
-    @apply px-[170px] max-2xl:px-[85px];
+  .px-responsive {
+    @apply px-4 2xl:px-[170px] lg:px-[85px];
   }
 
   .top-bar-link {

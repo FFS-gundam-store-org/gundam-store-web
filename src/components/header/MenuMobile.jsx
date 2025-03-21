@@ -62,21 +62,21 @@ export default function MenuMobile() {
         </div>
         <hr className="mobile-menu-line" />
         <ul className="flex flex-col gap-4 font-bold text-xl">
-          {menuItems.map(item => (
+          {menuItems?.map(item => (
             <li key={item.id} onClick={() => toggleSubMenu(item.id, !!item.subItems)}>
               <div className="flex gap-1 items-center">
                 <Link href={item.link}>{item.name}</Link>
-                {item.subItems && (
+                {item?.subItems && (
                   <button className="focus:outline-none cursor-pointer">
                     {isOpenSubMenus === item.id ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
                   </button>
                 )}
               </div>
 
-              {item.subItems && (
+              {item?.subItems && (
                 <ul className={`overflow-hidden transition-all duration-500 ease-in-out
                 ${isOpenSubMenus === item.id ? 'max-h-100 opacity-100 py-2' : 'max-h-0 opacity-0'}`}>
-                  {item.subItems.map(subItem => (
+                  {item?.subItems?.map(subItem => (
                     <li key={subItem.id} className="font-normal py-1" onClick={toggleMenu}>
                       <Link href={subItem.link}>{subItem.name}</Link>
                     </li>

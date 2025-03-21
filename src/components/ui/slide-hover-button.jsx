@@ -4,8 +4,8 @@ import { cn } from '@/lib/utils'
 export default function SlideHoverButton({ children, className, bgHover, ...props }) {
 
   return (
-    <>
       <Button
+        variant="outline"
         className={cn(
           'relative overflow-hidden cursor-pointer border border-destructive transition-colors duration-500 group',
           className
@@ -19,6 +19,5 @@ export default function SlideHoverButton({ children, className, bgHover, ...prop
       {children}
         </span>
       </Button>
-    </>
   )
 }

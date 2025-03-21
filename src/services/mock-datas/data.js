@@ -179,5 +179,17 @@ export const products = [
   { id: 1, name: 'Product 1', price: '$10', image: '/banner/banner-1.jpg', link: '#' },
   { id: 2, name: 'Product 2', price: '$20', image: '/banner/banner-2.jpg', link: '#' },
   { id: 3, name: 'Product 3', price: '$30', image: '/banner/banner-3.jpg', link: '#' },
-  { id: 4, name: 'Product 4', price: '$40', image: '/banner/banner-4.jpg', link: '#' }
+  { id: 4, name: 'Product 4', price: '$40', image: '/banner/banner-4.jpg', link: '#' },
+  { id: 5, name: 'Product 5', price: '$10', image: '/banner/banner-1.jpg', link: '#' },
+  { id: 6, name: 'Product 6', price: '$20', image: '/banner/banner-2.jpg', link: '#' },
+  { id: 7, name: 'Product 7', price: '$30', image: '/banner/banner-3.jpg', link: '#' },
+  { id: 8, name: 'Product 8', price: '$40', image: '/banner/banner-4.jpg', link: '#' }
+]
+
+export const filterButtonItems = [
+  { id: 1, name: 'Mới' },
+  { id: 2, name: 'Gunpla' },
+  { id: 3, name: 'Blindbox' },
+  { id: 4, name: 'Mua nhiều' },
+  { id: 5, name: 'Đánh giá hàng đầu' }
 ]

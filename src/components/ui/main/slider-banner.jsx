@@ -3,7 +3,7 @@ import { CarouselContent, CarouselItem } from '@/components/ui/carousel'
 import Link from 'next/link'
 import { bannerItems } from '@/services/mock-datas/data'
 import { MoveRight } from 'lucide-react'
-import AnimateWrapper from '@/components/animate-wrapper/AnimateWrapper'
+import AnimateWrapper from '@/components/ui/animate-wrapper/animate-wrapper'
 import AutoPlayCarousel from '@/components/ui/auto-play-carousel'
 
 export default function SliderBanner() {

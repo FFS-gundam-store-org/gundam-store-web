@@ -1,7 +1,8 @@
-import Header from '@/components/header/Header'
-import SliderBanner from '@/components/main/SliderBanner'
-import NewProduct from '@/components/main/products/NewProduct'
-import PopularProduct from '@/components/main/products/PopularProduct'
+import Header from '@/components/ui/header/header'
+import SliderBanner from '@/components/ui/main/slider-banner'
+import NewProduct from '@/components/ui/main/products/new-product'
+import PopularProduct from '@/components/ui/main/products/popular-product'
+import Footer from '@/components/ui/footer/footer'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         </div>
       </main>
       <footer>
+        <Footer />
       </footer>
     </>
   )

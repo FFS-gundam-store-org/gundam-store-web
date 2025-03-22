@@ -1,10 +1,10 @@
 import { filterButtonItems, products } from '@/services/mock-datas/data'
 import { Button } from '@/components/ui/button'
-import ProductCard from '@/components/main/products/ProductCard'
+import ProductCard from '@/components/ui/main/products/product-card'
 import Link from 'next/link'
 import SlideHoverButton from '@/components/ui/slide-hover-button'
 import { MoveRight } from 'lucide-react'
-import AnimateWrapper from '@/components/animate-wrapper/AnimateWrapper'
+import AnimateWrapper from '@/components/ui/animate-wrapper/animate-wrapper'
 
 export default function PopularProduct() {
 

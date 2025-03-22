@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-icons": "^1.3.2",
     "@radix-ui/react-navigation-menu": "^1.2.5",
     "@radix-ui/react-slot": "^1.1.2",
     "babel-plugin-react-compiler": "^19.0.0-beta-bafa41b-20250307",
@@ -21,6 +22,7 @@
     "next": "15.2.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
     "tailwind-merge": "^3.0.2",
     "tailwindcss-animate": "^1.0.7"
   },

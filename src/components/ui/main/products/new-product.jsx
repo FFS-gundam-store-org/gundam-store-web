@@ -5,9 +5,9 @@ import Link from 'next/link'
 import SlideHoverButton from '@/components/ui/slide-hover-button'
 import { MoveRight } from 'lucide-react'
 import { useEffect, useState } from 'react'
-import AnimateWrapper from '@/components/animate-wrapper/AnimateWrapper'
+import AnimateWrapper from '@/components/ui/animate-wrapper/animate-wrapper'
 import AutoScrollCarousel from '@/components/ui/auto-scroll-carousel'
-import ProductCard from '@/components/main/products/ProductCard'
+import ProductCard from '@/components/ui/main/products/product-card'
 
 export default function NewProduct() {
   const [loaded, setLoaded] = useState(false)

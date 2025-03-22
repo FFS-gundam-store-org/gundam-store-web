@@ -1,10 +1,11 @@
 'use client'
 import Link from 'next/link'
-import { ChevronDown, ChevronUp, Menu, Search, X } from 'lucide-react'
+import { ChevronDown, ChevronUp, Menu, X } from 'lucide-react'
 import { menuItems } from '@/services/mock-datas/data'
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import Logo from '@/components/ui/logo'
+import InputSearch from '@/components/ui/input-search'
 
 export default function MenuMobile() {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -31,9 +32,7 @@ export default function MenuMobile() {
   return (
     <>
       <div className="flex justify-between items-center p-4">
-        <Link href={'/'} className="logo lg:hidden">
-          <em>GUNDAM FFS</em>
-        </Link>
+        <Logo classname="lg:hidden" />
         <div className="text-xl sm:text-3xl cursor-pointer lg:hidden"
              onClick={toggleMenu}>
           {isOpenMenu ? <X /> : <Menu />}
@@ -42,24 +41,7 @@ export default function MenuMobile() {
 
       <div className={`absolute p-5 w-full bg-chart-3 h-screen overflow-hidden text-secondary transition-transform duration-500 ease-in-out
        ${isOpenMenu ? 'translate-x-0' : 'translate-x-full'} flex flex-col gap-5 lg:hidden`}>
-        <div className="relative">
-          <Input
-            type="text"
-            className="w-full h-[40px]"
-            placeholder="Tìm kiếm..."
-            onFocus={() => setIsFocused(true)}
-            onBlur={() => !searchText && setIsFocused(false)}
-            onChange={(e) => setSearchText(e.target.value)}
-            onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-          />
-          {isFocused && (
-            <button
-              className="absolute top-2.5 right-3"
-              onClick={handleSearch}>
-              <Search size={20} />
-            </button>
-          )}
-        </div>
+        <InputSearch classname="w-full" />
         <hr className="mobile-menu-line" />
         <ul className="flex flex-col gap-4 font-bold text-xl">
           {menuItems?.map(item => (

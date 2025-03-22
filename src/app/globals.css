@@ -135,8 +135,8 @@
     @apply flex items-center gap-[5px];
   }
 
-  .nav-link {
-    @apply hover:text-destructive transition-colors duration-300;
+  .hover-link {
+    @apply hover:text-destructive transition-colors ease-in-out duration-300 ;
   }
 
   .logo {

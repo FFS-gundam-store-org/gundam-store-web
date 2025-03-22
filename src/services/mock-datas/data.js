@@ -6,28 +6,6 @@ export const menuItems = [
   },
   {
     id: 2,
-    name: 'Blindbox',
-    link: '#',
-    subItems: [
-      {
-        id: 1,
-        name: 'Popmart',
-        link: '#'
-      },
-      {
-        id: 2,
-        name: '52Toys',
-        link: '#'
-      },
-      {
-        id: 3,
-        name: 'Rement',
-        link: '#'
-      }
-    ]
-  },
-  {
-    id: 3,
     name: 'Gunpla',
     link: '#',
     subItems: [
@@ -78,7 +56,28 @@ export const menuItems = [
       }
     ]
   },
-
+  {
+    id: 3,
+    name: 'Blindbox',
+    link: '#',
+    subItems: [
+      {
+        id: 1,
+        name: 'Popmart',
+        link: '#'
+      },
+      {
+        id: 2,
+        name: '52Toys',
+        link: '#'
+      },
+      {
+        id: 3,
+        name: 'Rement',
+        link: '#'
+      }
+    ]
+  },
   {
     id: 4,
     name: 'Figure-rise',
@@ -193,3 +192,80 @@ export const filterButtonItems = [
   { id: 4, name: 'Mua nhiều' },
   { id: 5, name: 'Đánh giá hàng đầu' }
 ]
+
+export const footerItems = [
+  {
+    id: 1,
+    name: 'Thông tin',
+    subItems: [
+      {
+        id: 1,
+        name: 'Giới thiệu',
+        link: '#'
+      },
+      {
+        id: 2,
+        name: 'Tin tức',
+        link: '#'
+      },
+      {
+        id: 3,
+        name: 'Liên hệ',
+        link: '#'
+      }
+    ]
+  },
+  {
+    id: 2,
+    name: 'Sản phẩm',
+    subItems: [
+      {
+        id: 1,
+        name: 'Gunpla',
+        link: '#'
+      },
+      {
+        id: 2,
+        name: 'Blindbox',
+        link: '#'
+      },
+      {
+        id: 3,
+        name: 'Figure-rise',
+        link: '#'
+      },
+      {
+        id: 4,
+        name: 'Anime',
+        link: '#'
+      }
+    ]
+  },
+  {
+    id: 3,
+    name: 'Dịch vụ',
+    subItems: [
+      {
+        id: 1,
+        name: 'Pre-order',
+        link: '#'
+      },
+      {
+        id: 2,
+        name: 'Hướng dẫn đặt hàng',
+        link: '#'
+      },
+      {
+        id: 3,
+        name: 'Privacy Policy',
+        link: '#'
+      },
+      {
+        id: 4,
+        name: 'Term Of Use',
+        link: '#'
+      }
+    ]
+  }
+]
+
